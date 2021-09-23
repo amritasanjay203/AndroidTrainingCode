@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     fun clickHandler(view: View) {
         // setTextView()
         val data = etName.text.toString()
-        val hIntent: Intent = Intent(this,HomeActivity::class.java);
+        val hIntent: Intent = Intent(this,HomeActivity::class.java) // Explicit intent
         hIntent.putExtra("namekey",data)
         startActivity(hIntent)
     }
@@ -43,6 +42,11 @@ class MainActivity : AppCompatActivity() {
         val name: String = etName.text.toString()
         //put that data into the textview
         tvRes.text = name
+    }
+
+    fun clickClock(view: View) {
+        val clockIntent = Intent(Intent.ACTION_QUICK_CLOCK) // Implicit intent
+        startActivity(clockIntent)
     }
 
 }
