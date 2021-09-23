@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_msg">ഹലോ അമൃത!</string>
+    <string name="name">പേര് നൽകുക</string>
+    <string name="password">പാസ്വേഡ് നൽകുക</string>
+    <string name="login">ലോഗിൻ</string>
+</resources>
