@@ -1,5 +1,6 @@
 package com.example.androidtraining
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -30,8 +31,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clickHandler(view: View) {
+        // setTextView()
+        val data = etName.text.toString()
+        val hIntent: Intent = Intent(this,HomeActivity::class.java);
+        hIntent.putExtra("namekey",data)
+        startActivity(hIntent)
+    }
+
+    private fun setTextView() {
         //get the data from edittext
-        val name:String = etName.text.toString()
+        val name: String = etName.text.toString()
         //put that data into the textview
         tvRes.text = name
     }
