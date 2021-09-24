@@ -4,5 +4,7 @@
     <string name="name">Enter name</string>
     <string name="password">Enter password</string>
     <string name="login">Login</string>
-    <string name="clock">Clock</string>
+    <string name="dial">Dial</string>
+    <string name="alarm">Alarm</string>
+    <string name="maps">Map</string>
 </resources>

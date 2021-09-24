@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome_msg"
         android:layout_marginStart="170dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:textColor="@color/default_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button" />
@@ -30,14 +30,34 @@
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/buttonNote"
+        android:id="@+id/buttonDial"
         android:layout_width="@dimen/btn_width"
         android:layout_height="wrap_content"
-        android:text="@string/clock"
-        android:onClick="clickClock"
+        android:text="@string/dial"
+        android:onClick="clickHandler"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button" />
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonAlarm"-->
+<!--        android:layout_width="@dimen/btn_width"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/alarm"-->
+<!--        android:onClick="clickHandler"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/buttonDial" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonMaps"-->
+<!--        android:layout_width="@dimen/btn_width"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/maps"-->
+<!--        android:onClick="clickHandler"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/buttonAlarm" />-->
 
     <EditText
         android:id="@+id/etName"
