@@ -47,6 +47,10 @@ class MainActivity : AppCompatActivity() {
 //            R.id.buttonMaps -> {
 //                showMap(Uri.parse("geo:47.6,-122.3"))
 //            }
+            R.id.buttonSignUp -> {
+                val signUpIntent = Intent(this, SignUpActivity::class.java)
+                startActivity(signUpIntent)
+            }
         }
 
     }
